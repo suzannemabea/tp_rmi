@@ -1,0 +1,8 @@
+//regle de police pour acquerir de nouveau droit
+
+grant {
+	permission java.net.SocketPermission "127.0.0.1:4099", "connect,resolve";
+	permission javax.management.MBeanServerPermission "createMBeanServer";
+	permission javax.management.MBeanPermission "-#-[-]", "queryNames";
+	permission java.net.SocketPermission "10.10.15.213:4099", "connect,resolve";
+};
